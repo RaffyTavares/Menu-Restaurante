@@ -1,0 +1,49 @@
+body{
+    color: #3e3e3e;
+}
+
+/* Imagen de fondo del header */
+.bg-image {
+    background-image: url('inicio.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+/* Botones */
+button {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sección del blog */
+#blog .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#blog .card:hover {
+    transform: scale(1.05);
+}
+
+#blog .btn-outline-primary {
+    border-color: #ff5722;
+    color: #ff5722;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#blog .btn-outline-primary:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+

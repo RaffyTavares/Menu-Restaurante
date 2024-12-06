@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Gourmet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="bg-image text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Restaurante Gourmet</h1>
+            <p class="lead">Disfruta de una experiencia culinaria única</p>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#menu">Menú</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#carrito">Carrito</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#footer">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-3">
+        <!-- Menú -->
+
+        <section id="menu" class="mb-5">
+            <h2 class="text-center mb-4">Nuestro Menú</h2>
+            <div class="row">
+
+                <!-- Carnes -->
+                <h2>Carnes</h2>
+                <div class="col-md-3">
+                   
+                    <div class="card mb-3">
+                        <img src="carne asada.jpg" class="card-img-top"  alt="Ribeye">
+                        <div class="card-body">
+                            <h5 class="card-title">Ribeye</h5>
+                            <p class="card-text">$1500.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ribeye')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                 
+                    <div class="card mb-3">
+                        <img src="picaña.jpg" class="card-img-top" alt="Picaña al grill">
+                        <div class="card-body">
+                            <h5 class="card-title">Picaña al grill</h5>
+                            <p class="card-text">$1350.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Picaña al grill')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                  
+                    <div class="card mb-3">
+                        <img src="Churrasco.jpg" class="card-img-top" alt="Churrasco">
+                        <div class="card-body">
+                            <h5 class="card-title">Churrasco</h5>
+                            <p class="card-text">$1200.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Churrasco')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    
+                    <div class="card mb-3">
+                        <img src="Filete de pechuga de pollo a la plancha.jpg" class="card-img-top" alt="Pechuga de pollo al grill">
+                        <div class="card-body">
+                            <h5 class="card-title">Pechuga de pollo al grill</h5>
+                            <p class="card-text">$15.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Pechuga de pollo al grill')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <br>
+
+                 <!-- Platos de Pasta -->
+                <h2>Platos de Pasta</h2>
+
+                <div class="col-md-3">
+                   
+                    <div class="card mb-3">
+                        <img src="pasta con camarones.jpg" class="card-img-top"  alt="Pasta con camarones">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta con camarones</h5>
+                            <p class="card-text">$900.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Pasta con camarones')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                 
+                    <div class="card mb-3">
+                        <img src="pasta al pesto.jpg" class="card-img-top" alt="Pasta verde al pesto">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta verde al pesto</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Pasta verde al pesto')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                  
+                    <div class="card mb-3">
+                        <img src="Lasagna Bolognese • Olive & Mango.jpg" class="card-img-top" alt="Lasagna Bolognese • Olive & Mango">
+                        <div class="card-body">
+                            <h5 class="card-title">Lasagna Bolognese • Olive & Mango</h5>
+                            <p class="card-text">$1100.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Lasagna Bolognese • Olive & Mango')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    
+                    <div class="card mb-3">
+                        <img src="Pasta bolonesa.jpg" class="card-img-top" alt="Pasta bolonesa">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta bolonesa</h5>
+                            <p class="card-text">$850.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Pasta bolonesa')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <br>
+
+                <!--Ensaladas-->
+                <h2>Ensaladas</h2>
+
+                <div class="col-md-3">
+                   
+                    <div class="card mb-3">
+                        <img src="primavera.jpg" class="card-img-top"  alt="Ensalada primavera">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada primavera</h5>
+                            <p class="card-text">$400.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ensalada primavera')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                 
+                    <div class="card mb-3">
+                        <img src="ensalada de garbanzos" class="card-img-top" alt="Ensalada de garbanzos">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada de garbanzos</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ensalada de garbanzos')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                  
+                    <div class="card mb-3">
+                        <img src="Ensalada de atún.jpg" class="card-img-top" alt="Ensalada de atun">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada de atun</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ensalada de atun')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    
+                    <div class="card mb-3">
+                        <img src="Ensalada de rúcula, fresas y parmesano.jpg" class="card-img-top" alt="Ensalada de rúcula,fresas y parmesano">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada de rúcula,fresas y parmesano</h5>
+                            <p class="card-text">$950.00</p>
+                            <button class="btn btn-primary" onclick="agregarAlCarrito('Ensalada de rúcula,fresas y parmesano')">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <br>
+
+            </div>
+        </section>
+
+
+         <!-- Carrito -->
+         <section id="carrito" class="mb-3">
+            <h2 class="text-center mb-4">Carrito de Compras</h2>
+            <ul id="lista-carrito" class="list-group" ></ul>
+            <button id="enviar-orden" class="btn btn-success mt-3" onclick="mostrarFormularioOrden()">Enviar Orden</button>
+        </section>
+
+        <!-- Formulario de Orden -->
+        <section id="formulario-orden" style="display: none;">
+            <h2 class="text-center mb-4">Formulario de Orden</h2>
+            <form id="orden-form" class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                </div>
+                <div class="col-12">
+                    <label for="resumen-orden" class="form-label">Orden</label>
+                    <textarea id="resumen-orden" class="form-control" readonly></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Confirmar Orden</button>
+                </div>
+            </form>
+        </section>
+
+
+                <!--Blog de informaciones -->
+
+        <section id="blog" class="my-5">
+            <h2 class="text-center mb-4">Blog</h2>
+            <div class="row">
+                <!-- Artículo 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="mejor carne.jpeg" class="card-img-top" alt="Consejos para Elegir la Mejor Carne">
+                        <div class="card-body">
+                            <h5 class="card-title">Consejos para Elegir la Mejor Carne</h5>
+                            <p class="card-text">Descubre cómo seleccionar los mejores cortes para tus platos favoritos.</p>
+                            <a href="https://www.carnicas-ismael.com/noticias/consejos-para-elegir-el-mejor-corte-de-carne/" class="btn btn-outline-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="vegetales.jpg" class="card-img-top" alt="Beneficios de Comer Vegetales">
+                        <div class="card-body">
+                            <h5 class="card-title">Beneficios de Comer Vegetales</h5>
+                            <p class="card-text">Conoce cómo los vegetales contribuyen a una dieta equilibrada y saludable.</p>
+                            <a href="https://benefipedia.com/beneficios-de-las-verduras-propiedades-y-beneficios/" class="btn btn-outline-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículo 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="secretos de la cocina.jpg" class="card-img-top" alt="Secretos de la Cocina Gourmet">
+                        <div class="card-body">
+                            <h5 class="card-title">Secretos de la Cocina Gourmet</h5>
+                            <p class="card-text">Descubre los trucos utilizados por los chefs más renombrados del mundo.</p>
+                            <a href="https://sanjuan-metro1.degustamenu.com/50-secretos-de-cocina/" class="btn btn-outline-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="col-md-3">
+                    <a href="#" class=" btn btn-outline-primary">Inicio</a>
+                </div>
+                
+            </div>
+        </section>
+        
+
+       
+    </main>
+
+    <footer id="footer" class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Restaurante Gourmet</p>
+        <p>Teléfono: +1 (809) 555-1234</p>
+        <p>Dirección: Calle Principal #123,Santo Domingo, RD</p>
+        <p>Horario: Lunes a Domingo, 12:00 PM - 10:00 PM</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+
